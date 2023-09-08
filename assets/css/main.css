@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -35,6 +37,7 @@ body {
 
 ol, ul {
 	list-style: none;
+	
 }
 
 blockquote, q {
@@ -124,8 +127,8 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 19pt;
+		font-family: Verdana, Helvetica, sans-serif;
+		font-size: 12pt;
 		font-weight: 400;
 		line-height: 1.65;
 	}
@@ -133,7 +136,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 16pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -141,7 +144,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 15pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -160,7 +163,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 3px;
+		border-bottom: dotted 1px;
 		color: inherit;
 	}
 
@@ -3072,7 +3075,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 2em 2em 1em 2em ;
 		text-align: center;
 	}
 
@@ -3086,7 +3089,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 2em 5em 2em 2em ;
 		}
 
 			#header.alt h1 {
@@ -3208,7 +3211,72 @@ input, select, textarea {
 			transform: scale(0.8) rotate(-30deg);
 		}
 
-/* Nav */
+
+div#hormenu {
+width: 100%;
+float: left;
+margin: 0;
+padding: 0;
+border-top: none;
+background: transparent;
+font-weight: bold;
+font-size: 10px;
+text-transform: uppercase;
+}
+
+div#hormenu ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+div#hormenu li
+{
+width:19%;
+float:left;
+margin: 0;
+padding: 0;
+border-right: none;
+color: black;
+}
+
+div#hormenu a
+{
+display: block;
+padding: 5px;
+color: #000;
+text-decoration: none;
+}
+
+div#hormenu a:hover
+{
+background-color: #5e4d92;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+div#hormenu li ul
+{
+display: none
+}
+
+div#hormenu li:hover ul
+{
+display: block;
+position: absolute;
+z-index:1;
+width:150px;
+padding: 0;
+margin: 0 0 0 -1px;
+border: none;
+background: white;
+}
+
+div#hormenu li li { border:none; width:200px; background-color:#ffffff; }
+div#hormenu li li a { padding:2px 2px 2px 10px; }
+
+/* Nav 
 
 	#nav {
 		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
@@ -3216,20 +3284,27 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #636363;
+		color: #1A0066;
 		position: absolute;
-		width: 64em;
+		width: 60em;
 		max-width: calc(100% - 4em);
-		padding: 1em;
-		background-color: #f7f7f7;
+		padding: 0em;
+		background-color: #ffffff;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
+		font-weight: bold;
+		font-size: 18px;
+
 	}
+	
+	
+	
+	
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #95618D;
 		}
 
 		#nav a:hover {
@@ -3258,7 +3333,7 @@ input, select, textarea {
 		}
 
 		#nav + #main {
-			padding-top: 4.25em;
+			padding-top: 0em;
 		}
 
 		#nav ul {
@@ -3273,9 +3348,9 @@ input, select, textarea {
 				-ms-transition: margin 0.2s ease;
 				transition: margin 0.2s ease;
 				display: inline-block;
-				margin: 0 0.35em;
+				margin: 0;
 				padding: 0;
-				vertical-align: middle;
+				vertical-align: center;
 			}
 
 				#nav ul li a {
@@ -3284,9 +3359,9 @@ input, select, textarea {
 					-ms-transition: font-size 0.2s ease;
 					transition: font-size 0.2s ease;
 					display: inline-block;
-					height: 2.25em;
-					line-height: 2.25em;
-					padding: 0 1.25em;
+					height: 1.25em;
+					line-height: 1.25em;
+					padding: 0.10em;
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
@@ -3318,6 +3393,8 @@ input, select, textarea {
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
+				
+}			
 
 		@media screen and (max-width: 736px) {
 
@@ -3328,8 +3405,11 @@ input, select, textarea {
 				#nav + #main {
 					padding-top: 0;
 				}
+				
 
 		}
+		
+*/
 
 /* Main */
 
